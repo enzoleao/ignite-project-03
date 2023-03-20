@@ -1,4 +1,6 @@
 import { ThemeProvider } from "styled-components";
+import { Transactions } from "./pages/Transactions/Transactions";
+import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 
 
@@ -6,9 +8,8 @@ export function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <div className="App">
-      <h1>ola</h1>
-      </div>
+      <GlobalStyle/>
+      <Transactions />
     </ThemeProvider>
   )
 }
