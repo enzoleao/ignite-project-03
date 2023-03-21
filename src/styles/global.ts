@@ -20,4 +20,8 @@ export const GlobalStyle = createGlobalStyle`
     body, input, textarea, button {
         font: 400 1rem Roboto, sans-serif
     }
+    body:focus, button:focus {
+        box-shadow: 0 0 0 0;    
+    outline: 0;
+    }
 `;
